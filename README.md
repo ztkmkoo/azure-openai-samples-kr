@@ -3,6 +3,7 @@
 
 ## Update 정리
 나만의 Jarvis 비서 만들기가 추가되었습니다. 외부 API를 말로 쉽게 호출하여 사용할 수 있습니다.
+![이동](./quick_start/11_my_jarvis_stt_chatgpt_tts.ipynb)
 ![나만의 비서 만들기](./quick_start/assets/stt_chatgpt_tts.png)
 
 ## GPT란?
