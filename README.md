@@ -1,6 +1,10 @@
 # GPT 기초, 사용 사례 및 샘플 솔루션 - 한국어 버전
 이 리포지토리에는 Azure OpenAI에서 제공하는 GPT(Generative Pre-trained Transformer)를 사용하는 기본 방법을 이해하고 샘플 솔루션을 및 다양한 사용 사례를 통해 이해에 도움이 되는 리소스가 포함되어 있습니다.
 
+## Update 정리
+나만의 Jarvis 비서 만들기가 추가되었습니다. 외부 API를 말로 쉽게 호출하여 사용할 수 있습니다.
+![나만의 비서 만들기](./quick_start/assets/stt_chatgpt_tts.png)
+
 ## GPT란?
 GPT(Generative Pre-trained Transformer)는 OpenAI에서 개발한 LLM(Large Language Model)입니다. 트랜스포머 아키텍처 기반의 딥러닝 모델입니다. 자세한 내용은 [OpenAI](openai.com)를 참조하세요.
 간단하게 정리된 문서는 다음을 참고하세요.
