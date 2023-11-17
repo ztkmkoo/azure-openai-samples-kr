@@ -6,7 +6,7 @@
 ![나만의 비서 만들기](./quick_start/assets/stt_chatgpt_tts.png)
 
 ## GPT란?
-GPT(Generative Pre-trained Transformer)는 OpenAI에서 개발한 LLM(Large Language Model)입니다. 트랜스포머 아키텍처 기반의 딥러닝 모델입니다. 자세한 내용은 [OpenAI](openai.com)를 참조하세요.
+GPT(Generative Pre-trained Transformer)는 OpenAI에서 개발한 LLM(Large Language Model)입니다. 트랜스포머 아키텍처 기반의 딥러닝 모델입니다. 자세한 내용은 [OpenAI](https://openai.com)를 참조하세요.
 간단하게 정리된 문서는 다음을 참고하세요.
 - [Azure OpenAI 소개 - 한글 deck](http://azure.studydev.com/openai/aoai_2023_201.pdf)
 - [Azure OpenAI 서비스 최신 업데이트 - 한글 deck](http://azure.studydev.com/openai/aoai_2023_sol.pdf)
