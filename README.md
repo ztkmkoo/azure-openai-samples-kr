@@ -2,24 +2,24 @@
 이 리포지토리에는 Azure OpenAI에서 제공하는 GPT(Generative Pre-trained Transformer)를 사용하는 기본 방법을 이해하고 샘플 솔루션을 및 다양한 사용 사례를 통해 이해에 도움이 되는 리소스가 포함되어 있습니다.
 
 ## Update 정리
-나만의 Jarvis 비서 만들기가 추가되었습니다. 외부 API를 말로 쉽게 호출하여 사용할 수 있습니다.
-![이동](./quick_start/11_my_jarvis_stt_chatgpt_tts.ipynb)
+나만의 Jarvis 비서 만들기가 추가되었습니다. 외부 API를 말로 쉽게 호출하여 사용할 수 있습니다. [실습이동]
 ![나만의 비서 만들기](./quick_start/assets/stt_chatgpt_tts.png)
+[실습이동]: ./quick_start/11_my_jarvis_stt_chatgpt_tts.ipynb
 
 ## GPT란?
 GPT(Generative Pre-trained Transformer)는 OpenAI에서 개발한 LLM(Large Language Model)입니다. 트랜스포머 아키텍처 기반의 딥러닝 모델입니다. 자세한 내용은 [OpenAI](openai.com)를 참조하세요.
 간단하게 정리된 문서는 다음을 참고하세요.
-- [Azure OpenAI 소개 - 한글 deck](http://azure.studydev.site/openai/aoai_2023_201.pdf)
-- [Azure OpenAI 서비스 최신 업데이트 - 한글 deck](http://azure.studydev.site/openai/aoai_2023_sol.pdf)
+- [Azure OpenAI 소개 - 한글 deck](http://azure.studydev.com/openai/aoai_2023_201.pdf)
+- [Azure OpenAI 서비스 최신 업데이트 - 한글 deck](http://azure.studydev.com/openai/aoai_2023_sol.pdf)
 
 ## 리소스
 다음의 순서로 GPT를 학습할 수 있습니다.
 
-- [(누구나) Prompt Engineering - 기초](http://azure.studydev.site/openai/aoai_2023_pe_01.pdf)
+- [(누구나) Prompt Engineering - 기초](http://azure.studydev.com/openai/aoai_2023_pe_01.pdf)
 
-- [(누구나) Prompt Engineering - Playground에서 놀기](http://azure.studydev.site/openai/aoai_2023_pe_02.pdf)
+- [(누구나) Prompt Engineering - Playground에서 놀기](http://azure.studydev.com/openai/aoai_2023_pe_02.pdf)
 
-- [(개발자) Prompt Engineering - IDE에서 개발](http://azure.studydev.site/openai/aoai_2023_pe_03.pdf)
+- [(개발자) Prompt Engineering - IDE에서 개발](http://azure.studydev.com/openai/aoai_2023_pe_03.pdf)
 
 - [(개발자) Prompt Engineering - Quick Start](./quick_start/): GPT 사용을 빠르게 시작할 수 있는 노트북 모음입니다.
 
