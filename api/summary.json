@@ -1,0 +1,18 @@
+[
+  {
+    "parking_name": "주차장1",
+    "emotionation": "긍정",
+    "keywords": [
+      "비싸지만 좋은",
+      "넓음"
+    ]
+  },
+  {
+    "parking_name": "주차장2",
+    "emotionation": "부정",
+    "keywords": [
+      "비싸지만 좋은",
+      "넓음"
+    ]
+  }
+]
