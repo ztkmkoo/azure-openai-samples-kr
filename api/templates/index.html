@@ -1,10 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ELISHA</title>
+    <title>해커톤2023 공통통</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list-item {
+            display: flex;
+            width: 100%; /* 5개의 아이템이 한 줄에 나오도록 20%로 설정 */
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        .image {
+            flex: 1;
+            max-width: 15%;
+            margin-right: 20px;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .info {
+            flex: 1;
+            max-width: 50%;
+        }
+    </style>
 </head>
 <body>
-공통통
+<div id="map" style="width:100%;height:800px;"></div>
+<div class="container">
+    <!--    <div class="list-item">-->
+    <!--        <div class="image">-->
+    <!--            <img src="https://via.placeholder.com/300" alt="이미지 1">-->
+    <!--        </div>-->
+    <!--        <div class="info">-->
+    <!--            <h2>이미지 정보 1</h2>-->
+    <!--            <p>이미지에 대한 추가 정보가 여기에 들어갑니다.</p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+</div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5b70daf5fd15d19605b45912662341b4"></script>
+<script>
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3
+    };
+    var map = new kakao.maps.Map(container, options);
+</script>
+<script>
+    async function fetchData() {
+        try {
+            const response = await fetch('http://localhost:8000/api/parking-lot/area');
+            const data = await response.json();
+            console.log('API에서 받아온 데이터:', data);
+
+            const container = document.querySelector('.container');
+            data.summary.forEach(item => {
+                const listItem = document.createElement('div');
+                listItem.className = 'list-item';
+
+                const imageContainer = document.createElement('div');
+                imageContainer.className = 'image';
+                const image = document.createElement('img');
+                image.src = item.image_url; // API 응답에서 이미지 URL을 가져와서 사용
+                image.alt = item.provider_name; // API 응답에서 이미지 대체 텍스트를 가져와서 사용
+                imageContainer.appendChild(image);
+
+                const infoContainer = document.createElement('div');
+                infoContainer.className = 'info';
+                const heading = document.createElement('h2');
+                heading.textContent = item.provider_name;
+
+                const paragraph = document.createElement('p');
+                paragraph.textContent = item.positive_keywords.join(",");
+                infoContainer.appendChild(heading);
+                infoContainer.appendChild(paragraph);
+
+                listItem.appendChild(imageContainer);
+                listItem.appendChild(infoContainer);
+
+                container.appendChild(listItem);
+            });
+
+        } catch (error) {
+            console.error('API 호출 중 오류:', error);
+        }
+    }
+
+    // 페이지 로드 시 fetchData 함수 호출
+    window.onload = fetchData;
+</script>
 </body>
 </html>
