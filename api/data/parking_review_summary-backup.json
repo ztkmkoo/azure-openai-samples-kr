@@ -1,0 +1,22 @@
+[
+  {
+    "provider_name": "하이파킹 판교알파돔타워",
+    "positive_keywords": [
+      "넓고좋아요"
+    ],
+    "negative_keywords": [
+      "비싸네요"
+    ]
+  },
+  {
+    "provider_name": "판교 공영주차장",
+    "positive_keywords": [
+      "저렴하게",
+      "이용가능"
+    ],
+    "negative_keywords": [
+      "대기줄",
+      "불친절합니다"
+    ]
+  }
+]

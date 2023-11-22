@@ -1,0 +1,39 @@
+[
+  {
+    "provider_name": "판교 공영주차장",
+    "positive_keywords": [
+      "저렴하다",
+      "넉넉하다",
+      "편하다",
+      "좋다",
+      "넓다"
+    ],
+    "negative_keywords": [
+      "대기",
+      "불친절하다",
+      "결제 실패",
+      "불편하다"
+    ]
+  },
+  {
+    "provider_name": "카카오판교아지트 주차장",
+    "positive_keywords": [
+      "넓음",
+      "편하다",
+      "여유롭다",
+      "좋다",
+      "깨끗하다"
+    ],
+    "negative_keywords": []
+  },
+  {
+    "provider_name": "하이파킹 판교알파돔타워",
+    "positive_keywords": [
+      "넓고좋아요"
+    ],
+    "negative_keywords": [
+      "비싸긴"
+    ]
+  }
+]
+
