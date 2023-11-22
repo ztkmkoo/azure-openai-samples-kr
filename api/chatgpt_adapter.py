@@ -81,7 +81,10 @@ def get_parking_summary(data):
 
 
 def get_parking_suggest(model_name: str = ""):
-    data = pd.read_csv("data/parking_review_score9.csv")
+    # iter_csv = pd.read_csv("data/parking_review_score9.csv")
+    # data = pd.concat([chunk[chunk['name'] == model_name] for chunk in iter_csv])
+    iter_csv = pd.read_csv("data/parking_review_score9.csv", iterator=True, chunksize=1000)
+    data = pd.concat([chunk[chunk['name'] == model_name] for chunk in iter_csv])
 
     messages = [
         {
@@ -134,3 +137,4 @@ def get_parking_suggest(model_name: str = ""):
     # print(response)
     # print(response["choices"][0]["message"]["content"])
     return response["choices"][0]["message"]["content"]
+
