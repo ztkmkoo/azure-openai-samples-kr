@@ -44,9 +44,3 @@ def get_parking_summary():
     summary_json = json.loads(summary)
     with open(filename + ".json", "w") as file:
         json.dump(summary_json, file, ensure_ascii=False)
-
-
-@app.get("/openai/talk")
-def talk_chatgpt():
-    text_prompt = "Should oxford commas always be used?"
-    return chatgpt_adapter.request(text_prompt)
