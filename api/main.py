@@ -1,17 +1,27 @@
-from fastapi import FastAPI
 import chatgpt_adapter
 import pandas as pd
 import json
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static")
+templates = Jinja2Templates(directory="templates")
 
 
-@app.get("/")
+@app.get("/", response_class=HTMLResponse)
+def index(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
+
+
+@app.get("/api/hello")
 def hello():
     return {"Kakaomobility Hackerton 2023": "공통통"}
 
 
-@app.get("/parking-lot/area")
+@app.get("/api/parking-lot/area")
 def get_parking_summary():
     with open("data/parking_review_summary.json", 'r', encoding='utf-8') as file:
         summary = json.load(file)
@@ -20,7 +30,7 @@ def get_parking_summary():
         return {"summary": summary, "suggest": json.loads(suggest)}
 
 
-@app.post("/parking/summary")
+@app.post("/api/parking/summary")
 def get_parking_summary():
     # TODO: 기능 개선
     # 1. raw_data 디렉토리에서 파일을 찾는다.
