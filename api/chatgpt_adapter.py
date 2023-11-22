@@ -79,7 +79,7 @@ def get_parking_summary(data):
     return response["choices"][0]["message"]["content"]
 
 
-def get_parking_suggest(model_name: str = ""):
+def get_parking_suggest(model_name: str = "", data: str = ""):
     messages = [
         {
             "role": "system",
@@ -117,7 +117,7 @@ def get_parking_suggest(model_name: str = ""):
             "content": ("""
                 아래 데이터에서 %s인 차량이 제일 선호하는 주차장 1개만 그리고 이유를 알려줘
                 %s
-            """) % (model_name, model_name)
+            """) % (model_name, data)
         }
     ]
 

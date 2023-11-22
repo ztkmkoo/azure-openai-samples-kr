@@ -1,6 +1,11 @@
 [
   {
     "provider_name": "판교 공영주차장",
+    "coordinate": {
+      "lat": 37.393330001861756,
+      "lng": 127.11075385608615
+    },
+    "image_url": "https://img1.kakaocdn.net/cthumb/local/C320x320/?fname=http%3A%2F%2Fk.kakaocdn.net%2Fdn%2FGwMEl%2FbtqvJUvWUHW%2Fs3gd5rlx5OXbPl8QRPRnH0%2Fimg_l.jpg",
     "positive_keywords": [
       "저렴하다",
       "넉넉하다",
@@ -17,6 +22,11 @@
   },
   {
     "provider_name": "카카오판교아지트 주차장",
+     "coordinate": {
+      "lat": 37.39553823350563,
+      "lng": 127.10997363648322
+    },
+    "image_url": "https://img1.kakaocdn.net/cthumb/local/C320x320/?fname=http%3A%2F%2Fk.kakaocdn.net%2Fdn%2FGwMEl%2FbtqvJUvWUHW%2Fs3gd5rlx5OXbPl8QRPRnH0%2Fimg_l.jpg",
     "positive_keywords": [
       "넓음",
       "편하다",
@@ -28,6 +38,11 @@
   },
   {
     "provider_name": "하이파킹 판교알파돔타워",
+    "coordinate": {
+      "lat": 37.3939718,
+      "lng": 127.1103711
+    },
+    "image_url": "https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Fk.kakaocdn.net%2Fdn%2FmMlyd%2Fbtqsg3CNIhT%2Fms2SeVcggynxxvCZcN5xS1%2Fimg_l.jpg",
     "positive_keywords": [
       "넓고좋아요"
     ],
