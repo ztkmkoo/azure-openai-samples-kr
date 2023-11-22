@@ -25,6 +25,7 @@ def hello():
 def get_parking_summary():
     with open("data/parking_review_summary.json", 'r', encoding='utf-8') as file:
         summary = json.load(file)
+
         suggest = chatgpt_adapter.get_parking_suggest("아반떼")
         # 좌표, 이미지 URL
         return {"summary": summary, "suggest": json.loads(suggest)}

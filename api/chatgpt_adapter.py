@@ -1,5 +1,6 @@
 import os
 import openai
+import pandas as pd
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -79,7 +80,9 @@ def get_parking_summary(data):
     return response["choices"][0]["message"]["content"]
 
 
-def get_parking_suggest(model_name: str = "", data: str = ""):
+def get_parking_suggest(model_name: str = ""):
+    data = pd.read_csv("data/parking_review_score9.csv")
+
     messages = [
         {
             "role": "system",
