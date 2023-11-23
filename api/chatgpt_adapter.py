@@ -47,7 +47,8 @@ def get_parking_summary(data):
                 Extract only meaningful words from other users when using the parking lot.
                 You need to analyze whether the content is positive or negative.
                 Provide positive words as positive_keywords and words with negative meaning as negative_keywords.                
-                Please provide a maximum of 5 each positive/negative word.                
+                Please provide a maximum of 5 each positive/negative word.    
+                Extract keywords ensuring that each word has only one meaning and make sure keyword must be simple contains one or two words.            
                 
                 The json example is:
                 [
